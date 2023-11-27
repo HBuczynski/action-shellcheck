@@ -73,7 +73,6 @@ if [ "${INPUT_REPORTER}" = 'github-pr-review' ]; then
     | reviewdog \
         -efm="%f:%l:%c:%t%*[^:]:%m" \
         -name="shellcheck" \
-        -reporter=github-pr-review \
         -filter-mode="${INPUT_FILTER_MODE}" \
         -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
         -level="${INPUT_LEVEL}" \
